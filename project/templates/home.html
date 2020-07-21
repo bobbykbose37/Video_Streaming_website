@@ -1,0 +1,700 @@
+
+<!--
+Author: W3layouts
+Author URL: http://w3layouts.com
+License: Creative Commons Attribution 3.0 Unported
+License URL: http://creativecommons.org/licenses/by/3.0/
+-->
+<!DOCTYPE HTML>
+{% load static %}
+<html style="overflow: hidden;"><head>
+<title>Mosaic a Entertainment Category Flat Bootstrap Responsive Website Template | Home :: w3layouts</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="keywords" content="Mosaic Responsive web template, Bootstrap Web Templates, Flat Web Templates, Android Compatible web template, 
+Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyEricsson, Motorola web design">
+<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+ <!-- Bootstrap Core CSS -->
+<link href="{% static 'video/css/bootstrap.css' %}" rel="stylesheet" type="text/css">
+<!-- Custom CSS -->
+<link href="{% static 'video/css/style.css' %}" rel="stylesheet" type="text/css">
+<!-- Graph CSS -->
+<link href="{% static 'video/css/font-awesome.css' %}" rel="stylesheet">
+<!-- jQuery -->
+<!-- lined-icons -->
+<link rel="stylesheet" href="{% static 'video/css/icon-font.css' %}" type="text/css">
+<!-- //lined-icons -->
+ <!-- Meters graphs -->
+<script src="{% static 'video/js/jquery-2.1.4.js' %}"></script>
+<style>
+
+.zoom {
+  transition: transform .2s; /* Animation */
+  
+}
+.zoom:hover {
+  transform: scale(2.0); /* (150% zoom)*/
+  position:relative;
+  z-index:1000;
+}
+form {
+  /* This bit sets up the horizontal layout */
+  display:flex;
+  flex-direction:row;
+
+  /* This bit draws the box around it */
+  border:1px solid grey;
+
+  /* I've used padding so you can see the edges of the elements. */
+  padding:2px;
+}
+
+input {
+  /* Tell the input to use all the available space */
+  flex-grow:2;
+  /* And hide the input's outline, so the form looks like the outline */
+  border:none;
+}
+
+input:focus {
+  /* removing the input focus blue box. Put this on the form if you like. */
+  outline: none;
+}
+
+button {
+  /* Just a little styling to make it pretty */
+  border:1px solid blue;
+  background:blue;
+  color:white;
+}
+</style>
+
+</head> 
+    	 <!-- /w3layouts-agile -->
+ <body class="sticky-header" onload="initMap()">
+    <section>
+      <!-- left side start-->
+		<div class="left-side sticky-left-side" tabindex="5000" style="overflow: hidden; outline: none;">
+
+			<!--logo and iconic logo start-->
+			<div class="logo" style="
+    height: 58px;background-color:#45b39d;
+">
+				<h1><a href="index.html" class="md-opjjpmhoiojifppkkcdabiobhakljdgm_doc">NS<span>Films</span></a></h1>
+			</div>
+			<div class="logo-icon text-center">
+				<a href="index.html">M </a>
+			</div>
+ 	 <!-- /w3l-agile -->
+			<!--logo and iconic logo end-->
+			<div class="left-side-inner">
+
+				<!--sidebar nav start-->
+					<ul class="nav nav-pills nav-stacked custom-nav">
+						<li class="active"><a href="index.html" class="md-opjjpmhoiojifppkkcdabiobhakljdgm_doc"><i class="lnr lnr-home"></i><span>Home</span></a></li>
+						<li class=""><a href="radio.html" class="md-opjjpmhoiojifppkkcdabiobhakljdgm_doc"><span class="glyphicon glyphicon-home glyphicon-blackboard" aria-hidden="true" style="
+    margin-left: -2;
+    margin-left: -5%;
+"></span> <span style="
+    margin-left: -3%;
+">TV Shows</span></a></li>
+						<li class=""><a href="#" data-toggle="modal" data-target="#myModal1" class="md-opjjpmhoiojifppkkcdabiobhakljdgm_doc"><span class="glyphicon glyphicon-film" aria-hidden="true" style="
+    margin-left: -5%;
+"></span><span>Movies</span></a></li>
+						<li class=""><a href="radio.html" class="md-opjjpmhoiojifppkkcdabiobhakljdgm_doc"><span class="glyphicon glyphicon-film glyphicon-king" aria-hidden="true" style="
+    margin-left: -5%;
+"></span> <span style="
+    margin-left: -3%;
+">Sports</span></a></li>
+							<li class=""><a href="{% url 'signup' %}" class="md-opjjpmhoiojifppkkcdabiobhakljdgm_doc"><span class="glyphicon glyphicon-off" aria-hidden="true" style="
+    margin-left: -5%;
+"></span> <span style="
+    margin-left: -3%;
+">Register Here</span></a></li>
+						<li class=""><a href="{% url 'loginn' %}" class="md-opjjpmhoiojifppkkcdabiobhakljdgm_doc"><span class="glyphicon glyphicon-hand-up" aria-hidden="true" style="
+    margin-left: -5%;
+"></span> <span style="
+    margin-left: -3%;
+">Login Here</span></a></li>
+							<li class=""></li>
+
+
+
+
+
+
+					</ul>
+				<!--sidebar nav end-->
+			</div>
+		</div>
+		 	 <!-- /w3layouts-agile -->
+					<!-- app-->
+			<div class="modal fade" id="myModal1" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+				<div class="modal-dialog facebook" role="document">
+					<div class="modal-content">
+						<div class="modal-header">
+							<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>						
+						</div>
+						<div class="modal-body">
+							<div class="app-grids">
+								<div class="app">
+						<div class="col-md-5 app-left mpl">
+							<h3>Mosaic mobile app on your smartphone!</h3>
+							<p>Download and Avail Special Songs Videos and Audios.</p>
+							<div class="app-devices">
+								<h5>Gets the app from</h5>
+								<a href="#"><img src="{% static 'video/images/1.png' %}" alt=""></a>
+								<a href="#"><img src="{% static 'video/images/2.png' %}" alt=""></a>
+								<div class="clearfix"> </div>
+							</div>
+						</div>
+						<div class="col-md-7 app-image">
+							<img src="{% static 'video/images/apps.png' %}" alt="">
+						</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+						<div>
+						<h1>Search here</h1>
+						</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+					</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- //app-->
+ 	 <!-- /w3l-agile -->
+		<!-- signup -->
+			<div class="modal fade" id="myModal5" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+				<div class="modal-dialog" role="document">
+					<div class="modal-content modal-info">
+						<div class="modal-header">
+							<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>						
+						</div>
+						<div class="modal-body modal-spa">
+							<div class="sign-grids">
+								<div class="sign">
+									<div class="sign-left">
+										<ul>
+											<li><a class="fb" href="#"><i></i>Sign in with Facebook</a></li>
+											<li><a class="goog" href="#"><i></i>Sign in with Google</a></li>
+											<li><a class="linkin" href="#"><i></i>Sign in with Linkedin</a></li>
+										</ul>
+									</div>
+									<div class="sign-right">
+										<form action="#" method="post">
+
+											<h3>Create your account </h3>
+											<input type="text" value="Name" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Name';}" required="">
+											<input type="text" value="Mobile number" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Mobile number';}" required="">
+											<input type="text" value="Email id" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Email id';}" required="">	
+											<input type="password" value="Password" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Password';}" required="">	
+											
+											<input type="submit" value="CREATE ACCOUNT">
+										</form>
+									</div>
+									<div class="clearfix"></div>								
+								</div>
+								<p>By logging in you agree to our <span>Terms and Conditions</span> and <span>Privacy Policy</span></p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- //signup -->
+ 	 <!-- /w3l-agile -->
+		<!-- left side end-->
+		<!-- main content start-->
+		<div class="main-content">
+			<!-- header-starts -->
+			<div class="header-section">
+			<!--toggle button start-->
+			<a class="toggle-btn"><i class="fa fa-bars"></i></a>
+			<!--toggle button end-->
+			<!--notification menu start -->
+				<div class="menu-right">
+					<div class="profile_details">
+						  <div class="col-md-4 serch-part">
+<!--								<div id="sb-search">-->
+<!--									<form action="{% url 'search' %]" method="post">-->
+<!--										<input placeholder="Search" type="search" name="search" id="search" style="-->
+<!--    height: 38px;-->
+<!--    margin-top:10px;-->
+<!--    /* width: 200px; */-->
+<!--"><input class="sb-search-submit" type="submit" value="">-->
+
+<!--										<input type="submit" value="Search" style="-->
+<!--    height: 38px;-->
+<!--    width: 100px;-->
+<!--    font-size: x-large;-->
+<!--    font-weight: 700;-->
+<!--    margin-top:10px;-->
+<!--    /* margin-top: 2%; */-->
+<!--">-->
+<!--									</form>-->
+<!--								</div>-->
+							  <form style="height:55px;" action="{% url 'search' %}" method="POST">
+								  {% csrf_token %}
+  <input placeholder="Search Films" style="font-size:20px;" name="search"/>
+  <button>Go</button>
+</form>
+							</div>
+							  <!-- search-scripts -->
+									<script src="js/classie.js"></script>
+									<script src="js/uisearch.js"></script>
+										<script>
+											new UISearch( document.getElementById( 'sb-search' ) );
+										</script>
+									<!-- //search-scripts -->
+											 <!---->
+											  <div class="col-md-4 player">
+													<div class="audio-player">
+														<div id="mep_0" class="mejs-container svg mejs-audio" style="width: 400px; height: 30px;"><div class="mejs-inner"><div class="mejs-mediaelement"><audio id="audio-player" src="media/Blue Browne.ogg">
+														<source src="media/Blue Browne.ogg" type="audio/ogg">
+																<source src="media/Blue Browne.mp3" type="audio/mpeg">
+																<source src="media/Georgia.ogg" type="audio/ogg">
+																<source src="media/Georgia.mp3" type="audio/mpeg"></audio></div><div class="mejs-layers"><div class="mejs-poster mejs-layer" style="display: none; width: 400px; height: 30px;"></div></div><div class="mejs-controls">
+
+															<div class="mejs-time-rail" style="width: 0px;"><span class="mejs-time-total" style="width: 0px;"><span class="mejs-time-buffering" style="display: none;"></span><span class="mejs-time-loaded" style="width: 154px;"></span><span class="mejs-time-current" style="width: 0px;"></span><span class="mejs-time-handle" style="left: -12px;"></span><span class="mejs-time-float" style="display: none; left: 64.6041px;"><span class="mejs-time-float-current">00:23</span><span class="mejs-time-float-corner"></span></span></span></div>
+
+															<div class="mejs-horizontal-volume-slider mejs-mute"><div class="mejs-horizontal-volume-total"></div><div class="mejs-horizontal-volume-current" style="width: 64px;"></div><div class="mejs-horizontal-volume-handle" style="left: 58px;"></div></div></div><div class="mejs-clear"></div></div></div>
+														</div>
+												<!---->
+												<script type="text/javascript">
+													$(function(){
+													  $('#audio-player').mediaelementplayer({
+														alwaysShowControls: true,
+														features: ['playpause','progress','volume'],
+														audioVolume: 'horizontal',
+														iPadUseNativeControls: true,
+														iPhoneUseNativeControls: true,
+														AndroidUseNativeControls: true
+													});
+												 });
+												</script>
+												<!--audio-->
+													<link rel="stylesheet" type="text/css" media="all" href="css/audio.css">
+													<script type="text/javascript" src="js/mediaelement-and-player.min.js"></script>
+													<!---->
+
+
+												<!--//-->
+
+											</div>
+											<div class="col-md-4 login-pop">
+
+
+											</div>
+										<div class="clearfix"> </div>
+								</div>
+							<!-------->
+						</div>
+					<div class="clearfix"></div>
+				</div>
+			<!--notification menu end -->
+			<!-- //header-ends -->
+ 	 <!-- /w3l-agileits -->
+		<!-- //header-ends -->
+			<div id="page-wrapper">
+				<div class="inner-content">
+
+				      <div class="music-left">
+					      <!--banner-section-->
+							<div class="banner-section">
+								<div class="banner">
+									 <div class="callbacks_container">
+										<ul class="rslides callbacks callbacks1" id="slider4">
+
+
+												<li id="callbacks1_s2" class="callbacks1_on" >
+												 <div class="banner-img">
+
+
+
+														 </div>
+
+												 	 <!-- /w3layouts-agileits -->
+												</li>
+											</ul><a href="#" class="callbacks_nav callbacks1_nav prev md-opjjpmhoiojifppkkcdabiobhakljdgm_doc">Previous</a><a href="#" class="callbacks_nav callbacks1_nav next md-opjjpmhoiojifppkkcdabiobhakljdgm_doc">Next</a><a href="#" class="callbacks_nav callbacks1_nav prev md-opjjpmhoiojifppkkcdabiobhakljdgm_doc">Previous</a><a href="#" class="callbacks_nav callbacks1_nav next md-opjjpmhoiojifppkkcdabiobhakljdgm_doc">Next</a>
+
+										</div>
+										<!--banner-->
+									<script src="/static/video/js/responsiveslides.min.js"></script>
+								 <script>
+									// You can also use "$(window).load(function() {"
+									$(function () {
+									  // Slideshow 4
+									  $("#slider4").responsiveSlides({
+										auto: true,
+										pager:true,
+										nav:true,
+										speed: 500,
+										namespace: "callbacks",
+										before: function () {
+										  $('.events').append("<li>before event fired.</li>");
+										},
+										after: function () {
+										  $('.events').append("<li>after event fired.</li>");
+										}
+									  });
+
+									});
+								  </script>
+								<div class="clearfix"> </div>
+							</div>
+						</div>
+				<!--//End-banner-->
+					<!--albums-->
+					<!-- pop-up-box -->
+							<link href="{% static 'video/css/popuo-box.css' %}" rel="stylesheet" type="text/css" media="all">
+							<script src="{% static 'video/js/jquery.magnific-popup.js' %}" type="text/javascript"></script>
+							 <script>
+									$(document).ready(function() {
+									$('.popup-with-zoom-anim').magnificPopup({
+										type: 'inline',
+										fixedContentPos: false,
+										fixedBgPos: true,
+										overflowY: 'auto',
+										closeBtnInside: true,
+										preloader: false,
+										midClick: true,
+										removalDelay: 300,
+										mainClass: 'my-mfp-zoom-in'
+									});
+									});
+							</script>
+					<!--//pop-up-box -->
+						  <iframe src="https://drive.google.com/file/d/1HISX0EsREoiO7frGgt1MsTMAtMNN_Xu3/preview" width="520" height="280"></iframe>
+						<div class="albums">
+								<div class="tittle-head">
+									<h3 class="tittle">New Releases <span class="new">New</span></h3>
+									<a href="index.html"><h4 class="tittle">See all</h4></a>
+									<div class="clearfix"> </div>
+								</div>
+							{% for i in obj_releases %}
+							{% if forloop.counter <= 8 %}
+
+								<div class="col-md-3 content-grid">
+									<div class="zoom">
+								<a href="/video_page_releases/{{i.id}}">
+									{% if i.image %}
+									<img src="{{ i.image.url }}" height="114" width="114" title="allbum-name"></a>
+									{% endif %}
+										{{continue}}
+									</div>
+									<a href="/video_page_releases/{{i.id}}">{{ i.name }}</a>
+
+							</div>
+							   </a>
+							{% endif %}
+							{%endfor%}
+
+
+
+
+
+
+
+
+
+											<div class="clearfix"> </div>
+										</div>
+
+					<!--//End-albums-->
+						<!--//discover-view-->
+
+						<div class="albums second">
+										<div class="tittle-head">
+											<h3 class="tittle">Discover <span class="new">View</span></h3>
+											<a href="index.html"><h4 class="tittle two">See all</h4></a>
+											<div class="clearfix"> </div>
+										</div>
+							{% for j in obj_discover %}
+							{% if forloop.counter <= 8 %}
+											<div class="col-md-3 content-grid">
+												<div class="zoom">
+												<a href="/video_page_discover/{{j.id}}">
+													{% if j.image %}
+													<img src="{{ j.image.url }}" title="allbum-name"></a>
+													{% endif %}
+													{{continue}}
+												</div>
+												<a href="/video_page_discover/{{j.id}}">{{ j.name }}</a>
+											</div>
+							{% endif %}
+							{% endfor %}
+
+
+
+						</div>
+											<div class="clearfix"> </div>
+									</div>
+								<!--//discover-view-->
+							</div>
+							<!--//music-left-->
+						    <!--/music-right-->
+						   <div class="music-right">
+								<!--/video-main-->
+								 <div class="video-main">
+									<div class="video-record-list">
+										<div id="jp_container_1" class="jp-video jp-video-270p" role="application" aria-label="media player">
+											<div class="jp-type-playlist">
+
+												<div style="height: 270px;width: 300px;"><img src="/media/ads/images.jpeg" style="height: 270px;
+												 display: inline;" width="300px"></div>
+
+												<div class="jp-gui">
+
+
+												</div>
+												<div class="jp-playlist">
+													<ul style="display: block;">
+
+														<li class="jp-playlist-current">
+															{% for i in obj_releases %}
+															{% if forloop.counter <= 8 %}
+															<div style="text-align:center;">
+														<a href="javascript:;" class="jp-playlist-item-remove md-opjjpmhoiojifppkkcdabiobhakljdgm_doc"
+														   style="display: none;">×</a>
+														<a href="javascript:;" class="jp-playlist-item jp-playlist-current md-opjjpmhoiojifppkkcdabiobhakljdgm_doc"
+														   tabindex="0"><span style="text-align:center;">{{ i.name }}</span></a>
+															</div>
+															{% endif %}
+															{% endfor %}
+														</li>
+
+													</ul>
+												</div>
+												<div class="jp-no-solution" style="display: none;">
+													<span>Update Required</span>
+													To play the media you will need to either update your browser to a recent version or update your <a href="http://get.adobe.com/flashplayer/" target="_blank" class="md-opjjpmhoiojifppkkcdabiobhakljdgm_doc">Flash plugin</a>.
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<!-- script for play-list -->
+				<link href="{% static 'video/css/jplayer.blue.monday.min.css' %}" rel="stylesheet" type="text/css">
+				<script type="text/javascript" src="{% static 'video/js/jquery.jplayer.min.js' %}"></script>
+				<script type="text/javascript" src="{% static 'video/js/jplayer.playlist.min.js' %}"></script>
+				<script type="text/javascript">
+				//<![CDATA[
+				$(document).ready(function(){
+
+					new jPlayerPlaylist({
+						jPlayer: "#jquery_jplayer_1",
+						cssSelectorAncestor: "#jp_container_1"
+					}, [
+
+						{
+							title:"1. Ellie-Goulding",
+							artist:"",
+							mp4: "video/Ellie-Goulding.mp4",
+							ogv: "video/Ellie-Goulding.ogv",
+							webmv: "video/Ellie-Goulding.webm",
+							poster:"video/play1.png
+						},
+						{
+							title:"2. Mark-Ronson-Uptown",
+							artist:"",
+							mp4: "video/Mark-Ronson-Uptown.mp4",
+							ogv: "video/Mark-Ronson-Uptown.ogv",
+							webmv: "video/Mark-Ronson-Uptown.webm",
+							poster:"video/play2.png"
+						},
+						{
+							title:"3. Ellie-Goulding",
+							artist:"",
+							mp4: "video/Ellie-Goulding.mp4",
+							ogv: "video/Ellie-Goulding.ogv",
+							webmv: "video/Ellie-Goulding.webm",
+							poster:"video/play1.png"
+						},
+						{
+							title:"4. Maroon-Sugar",
+							artist:"",
+							mp4: "video/Maroon-Sugar.mp4",
+							ogv: "video/Maroon-Sugar.ogv",
+							webmv: "video/Maroon-Sugar.webm",
+							poster:"video/play4.png"
+						},
+						{
+							title:"5. Pharrell-Williams",
+							artist:"",
+							mp4: "video/Pharrell-Williams.mp4",
+							ogv: "video/Pharrell-Williams.ogv",
+							webmv: "video/Pharrell-Williams.webm",
+							poster:"video/play5.png"
+						},
+						{
+							title:"6. Ellie-Goulding",
+							artist:"",
+							mp4: "video/Ellie-Goulding.mp4",
+							ogv: "video/Ellie-Goulding.ogv",
+							webmv: "video/Ellie-Goulding.webm",
+							poster:"video/play1.png"
+						},
+						{
+							title:"7. Pharrell-Williams",
+							artist:"",
+							mp4: "video/Pharrell-Williams.mp4",
+							ogv: "video/Pharrell-Williams.ogv",
+							webmv: "video/Pharrell-Williams.webm",
+							poster:"video/play5.png"
+						}
+					], {
+						swfPath: "../../dist/jplayer",
+						supplied: "webmv,ogv,mp4",
+						useStateClassSkin: true,
+						autoBlur: false,
+						smoothPlayBar: true,
+						keyEnabled: true
+					});
+
+				});
+				//]]>
+					</script>
+			<!-- //script for play-list -->
+
+								<!--//video-main-->
+								<!--/app_store-->
+
+								  <!--//app_store-->
+						         <!--/start-paricing-tables-->
+									<div class="price-section" style="
+    margin-top: 4%;
+">
+										{% for i in obj_ads %}
+    <img src="{{ i.ad2.url }}" width="260" height="460">
+										{% endfor %}
+										{% endfor %]
+											<div class="pricing-inner">
+
+
+
+													<div class="clearfix"></div>
+												</div>
+												<!--//end-pricing-tables-->
+												</div>
+											</div>
+													 <!--//music-right-->
+											<div class="clearfix"></div>
+			 	 <!-- /w3l-agile-its -->
+										</div>
+						<!--body wrapper start-->
+
+						<div class="review-slider">
+								<div class="tittle-head">
+									<h3 class="tittle">Featured Albums <span class="new"> New</span></h3>
+									<div class="clearfix"> </div>
+								</div>
+								 <div class="nbs-flexisel-container"><div class="nbs-flexisel-inner"><ul id="flexiselDemo1" class="nbs-flexisel-ul" style="left: -148.6px; display: block;">
+
+
+
+
+
+
+                              {% for i in obj_features %}
+							<li class="nbs-flexisel-item" style="width: 150.6px;">
+								<div class="zoom">
+									{% if i.image %}
+									<a href="/video_page_features/{{i.id}}">><img src="{{ i.image.url }}" alt=""></a>
+								{% endif %}
+								</div>
+									<div class="slide-title"><h4>{{ i.name }}</h4></div>
+									<div class="date-city">
+										<h5>Jan-02-16</h5>
+										<div class="buy-tickets">
+											<a href="single.html">READ MORE</a>
+										</div>
+									</div>
+								</li>
+									 {% endfor %}
+								 </ul><div class="nbs-flexisel-nav-left" style="top: 180px;"></div><div class="nbs-flexisel-nav-right" style="top: 180px;"></div></div></div>
+							<script type="text/javascript">
+						$(window).load(function() {
+
+						  $("#flexiselDemo1").flexisel({
+								visibleItems: 5,
+								animationSpeed: 1000,
+								autoPlay: true,
+								autoPlaySpeed: 3000,
+								pauseOnHover: false,
+								enableResponsiveBreakpoints: true,
+								responsiveBreakpoints: {
+									portrait: {
+										changePoint:480,
+										visibleItems: 2
+									},
+									landscape: {
+										changePoint:640,
+										visibleItems: 3
+									},
+									tablet: {
+										changePoint:800,
+										visibleItems: 4
+									}
+								}
+							});
+							});
+						</script>
+						<script type="text/javascript" src="{% static 'video/js/jquery.flexisel.js' %}"></script>
+						</div>
+								</div>
+							<div class="clearfix"></div>
+						<!--body wrapper end-->
+ 	 <!-- /w3l-agile -->
+					</div>
+			  <!--body wrapper end-->
+			     
+			
+        <!--footer section start-->
+			
+        <!--footer section end-->
+ 	 <!-- /w3l-agile -->
+      <!-- main content end-->
+   </section>
+  
+<script src="{% static 'video/js/jquery.nicescroll.js' %}"></script>
+<script src="{% static 'video/js/scripts.js' %}"></script><div id="ascrail2000" class="nicescroll-rails" style="width: 5px; z-index: 1000; background: rgb(68, 68, 68); cursor: default; position: fixed; top: 0px; height: 100%; right: 0px; opacity: 0;"><div style="position: relative; top: 0px; float: right; width: 5px; height: 189px; background-color: rgb(69, 179, 157); border: 0px; background-clip: padding-box; border-radius: 10px;"></div></div><div id="ascrail2000-hr" class="nicescroll-rails" style="height: 5px; z-index: 1000; background: rgb(68, 68, 68); position: fixed; left: 0px; width: 100%; bottom: 0px; cursor: default; opacity: 0; display: block;"><div style="position: relative; top: 0px; height: 5px; width: 1211px; background-color: rgb(69, 179, 157); border: 0px; background-clip: padding-box; border-radius: 10px; left: 0px;"></div></div><div id="ascrail2001" class="nicescroll-rails" style="width: 3px; z-index: 100; background: rgb(68, 68, 68); cursor: default; position: fixed; top: 0px; left: 197px; height: 610px; display: none; opacity: 0;"><div style="position: relative; top: 0px; float: right; width: 3px; height: 0px; background-color: rgb(69, 179, 157); border: 0px; background-clip: padding-box; border-radius: 10px;"></div></div><div id="ascrail2001-hr" class="nicescroll-rails" style="height: 3px; z-index: 100; background: rgb(68, 68, 68); top: 607px; left: 0px; position: fixed; cursor: default; display: none; opacity: 0; width: 197px;"><div style="position: relative; top: 0px; height: 3px; width: 0px; background-color: rgb(69, 179, 157); border: 0px; background-clip: padding-box; border-radius: 10px; left: 0px;"></div></div>
+<!-- Bootstrap Core JavaScript -->
+<script src="{% static 'video/js/bootstrap.js' %}"></script>
+
+</body></html>
